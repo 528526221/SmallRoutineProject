@@ -49,6 +49,15 @@ Page({
       complete: function(res) {},
     });
   },
+
+  /**
+   * 打开评论
+   */
+  onMovieReviewsTap: function(event){
+    // wx.navigateTo({
+    //   url: '../movie-reviews/movie-reviews?movieId=' + event.currentTarget.dataset.movieId,
+    // });
+  },
   
 
 

@@ -10,7 +10,7 @@
       <text class='title-country-tip'>·</text>
       <text>{{year}}</text>
     </view>
-    <view class='title-collect'>
+    <view class='title-collect' bindtap='onMovieReviewsTap' data-movie-id='{{id}}'>
       <text class='title-collect-num'>{{collect_count}}</text>
       <text class='title-collect-tip'>人喜欢</text>
       <text class='title-collect-num'>{{comments_count}}</text>

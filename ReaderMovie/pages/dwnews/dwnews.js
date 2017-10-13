@@ -25,6 +25,9 @@ Page({
     });
   },
 
+  /**
+   * 请求数据
+   */
   loadData: function(newsPage){
     wx.showNavigationBarLoading();
     var url = getApp().globalData.dwBase + "/apiNewsList.php" + "?action=l&newsTag=headlineNews" + "&p=" + this.data.newsPage;
@@ -40,6 +43,14 @@ Page({
       wx.hideLoading();
       wx.stopPullDownRefresh();
       
+    });
+  },
+  /**
+   * 单个资讯点击
+   */
+  onNewsItemTap: function(event){
+    wx.showToast({
+      title: event.currentTarget.dataset.newsTitle,
     });
   },
 

@@ -7,7 +7,8 @@
     "pages/posts/post",
     "pages/movies/movies",
     "pages/more-movie/more-movie",
-    "pages/movie-detail/movie-detail"
+    "pages/movie-detail/movie-detail",
+    "pages/movie-reviews/movie-reviews"
   ],
   "window": {
     "navigationBarBackgroundColor": "#405f80"

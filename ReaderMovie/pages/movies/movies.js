@@ -37,6 +37,7 @@ Page({
     this.getMovieListData(inTheatersUrl, "inTheaters","正在热映");
     this.getMovieListData(comingSoonUrl, "comingSoon", "即将上映");
     this.getMovieListData(top250Url, "top250", "top250","top250");
+
     // this.searchMovieData("最热",this.data.start,this.data.count);
 
   },

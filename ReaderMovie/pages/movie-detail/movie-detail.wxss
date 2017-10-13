@@ -47,7 +47,9 @@
 
 .title-collect {
   margin-left: 30rpx;
-  margin-top: 50rpx;
+  margin-top: 40rpx;
+  padding-top: 10rpx;
+  padding-bottom: 10rpx;
 }
 
 .title-collect-num {
