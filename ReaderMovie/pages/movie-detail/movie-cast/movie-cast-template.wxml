@@ -1,0 +1,6 @@
+<template name='movieCastTemplate'>
+  <view class='movie-cast-container'>
+    <image class='movie-cast-image' src='{{avatars.medium}}'></image>
+    <text class='movie-cast-name'>{{name}}</text>
+  </view>
+</template>

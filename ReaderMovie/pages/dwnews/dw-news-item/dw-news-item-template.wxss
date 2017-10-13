@@ -1,0 +1,65 @@
+.dwnews-item-container {
+  display: flex;
+  flex-direction: row;
+  position: relative; 
+  padding: 15rpx;
+  background: white;
+}
+.dwnews-item-container:active{
+  background: #eee;
+}
+
+.dwnews-item-image {
+  width: 200rpx;
+  height: 160rpx;
+}
+
+.dwnews-item-content-container {
+  display: flex;
+  flex-direction: column;
+  padding-left: 10rpx;
+  width: 510rpx;
+}
+
+.dwnews-item-title {
+  font-size: 30rpx;
+  color: #333;
+  overflow: hidden;
+  /* 超出的文本隐藏   */
+  text-overflow: ellipsis; /* 溢出用省略号显示 */
+  white-space: nowrap; /* 溢出不换行 */
+}
+
+.dwnews-item-content {
+  color: #454545;
+  font-size: 24rpx;
+  display: -webkit-box;
+  /* 将对象作为弹性伸缩盒子模型显示。 */
+  -webkit-box-orient: vertical;
+  /* 从上到下垂直排列子元素（设置伸缩盒子的子元素排列方式） */
+  -webkit-line-clamp: 2;
+  /* 这个属性不是css的规范属性，需要组合上面两个属性，表示显示的行数。 */
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin-top: 15rpx;
+}
+
+.dwnews-item-time-container {
+  display: flex;
+  flex-direction: row;
+  position: absolute;
+  bottom: 15rpx;
+  width: 510rpx;
+}
+
+.dwnews-item-readcount {
+  font-size: 20rpx;
+  color: #999;
+  flex: 1;
+}
+
+.dwnews-item-time {
+  font-size: 20rpx;
+  color: #999;
+  float: right;
+}

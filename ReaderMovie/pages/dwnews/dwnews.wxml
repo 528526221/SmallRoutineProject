@@ -1,0 +1,9 @@
+<!--多玩新闻-->
+<import src="dw-news-item/dw-news-item-template.wxml"/>
+<block wx:for="{{news}}" wx:key="*this">
+  <view>
+  <template is="dwnewsItemTemplate" data="{{...item}}"/>
+  </view>
+      <view class='horizon'></view>
+
+</block>

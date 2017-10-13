@@ -1,0 +1,18 @@
+.movie-cast-container{
+  display: flex;
+  flex-direction: column;
+  padding-right: 30rpx;
+  padding-left: 10rpx;
+  width: 170rpx;
+}
+.movie-cast-image{
+  width: 170rpx;
+  height: 210rpx;
+}
+.movie-cast-name{
+  color: #333;
+  font-size: 24rpx;
+  margin: 10rpx auto 0;
+  width: 100%;
+  text-align: center;
+}

@@ -1,0 +1,67 @@
+<import src="../movies/stars/stars-template.wxml" />
+<import src="movie-cast/movie-cast-template.wxml" />
+
+<view class="container-title">
+  <image class='head-img' src='{{images.large}}' mode='aspectFill'></image>
+  <view class='head-img-cover'>
+    <text class='movie-title'>{{title}}</text>
+    <view class='title-country'>
+      <text>{{countries[0]}}</text>
+      <text class='title-country-tip'>·</text>
+      <text>{{year}}</text>
+    </view>
+    <view class='title-collect'>
+      <text class='title-collect-num'>{{collect_count}}</text>
+      <text class='title-collect-tip'>人喜欢</text>
+      <text class='title-collect-num'>{{comments_count}}</text>
+      <text class='title-collect-tip'>条评论</text>
+    </view>
+  </view>
+</view>
+
+<view class='container-direct'>
+  <text class='original-title'>{{original_title}}</text>
+  <view>
+    <view class='movie-rating'>
+      <text class='rating-tip'>评分</text>
+      <template is="starsTemplate" data="{{...star}}" />
+    </view>
+    <view class='movie-rating'>
+      <text class='rating-tip'>导演</text>
+      <text>{{directors[0].name}}</text>
+    </view>
+    <view class='movie-rating'>
+      <text class='rating-tip'>影人</text>
+      <text>{{movieCastNames}}</text>
+
+    </view>
+    <view class='movie-rating'>
+      <text class='rating-tip'>类型</text>
+      <block wx:for='{{genres}}' wx:key='*this'>
+        <text>{{index==genres.length-1?item:item+'、'}}</text>
+      </block>
+    </view>
+  </view>
+</view>
+
+<view class='horizon'></view>
+
+<view class='summary-container'>
+  <text class='summary-tip'>剧情简介</text>
+  <text class='summary'>{{summary}}</text>
+</view>
+
+<view class='horizon'></view>
+
+<view class='casts-container'>
+  <text class='summary-tip'>影人</text>
+  <scroll-view scroll-x='true' style="width:100%">
+    <view class='casts-container-imgs'>
+      <block wx:for='{{casts}}' wx:key='*this'>
+        <template is='movieCastTemplate' data='{{...item}}' />
+      </block>
+    </view>  
+  </scroll-view>
+</view>
+
+<image class='movie-cover-image' src='{{images.medium}}' bindtap='viewBigImage' data-src='{{images.large}}'></image>

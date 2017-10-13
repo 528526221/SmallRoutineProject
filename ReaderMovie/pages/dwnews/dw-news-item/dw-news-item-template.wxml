@@ -1,0 +1,13 @@
+<template name="dwnewsItemTemplate">
+  <view class='dwnews-item-container'>
+    <image class='dwnews-item-image' src='{{srcPhoto}}' mode='aspectFill'></image>
+    <view class='dwnews-item-content-container'>
+      <text class='dwnews-item-title'>{{title}}</text>
+      <text class='dwnews-item-content'>{{content}}</text>
+      <view class='dwnews-item-time-container'>
+        <text class='dwnews-item-readcount'>阅读 {{readCount}}</text>
+        <text class='dwnews-item-time'>{{time}}</text>
+      </view>
+    </view>
+  </view>
+</template>

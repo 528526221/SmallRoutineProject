@@ -1,0 +1,7 @@
+/* pages/dwnews/dwnews.wxss */
+@import "dw-news-item/dw-news-item-template.wxss";
+.horizon {
+  background-color: #e5e5e5;
+  height: 1px;
+  width: 100%;
+}

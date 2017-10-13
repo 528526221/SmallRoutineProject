@@ -1,0 +1,95 @@
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
+.head-image {
+  width: 100%;
+  height: 460rpx;
+}
+
+.audio {
+  width: 102rpx;
+  height: 110rpx;
+  position: absolute;
+  left: 50%;
+  margin-left: -51rpx;
+  top: 179rpx;
+  opacity: 0.6;
+}
+
+.author-date {
+  flex-direction: row;
+  margin-left: 30rpx;
+  margin-top: 20rpx;
+}
+
+.avatar {
+  width: 64rpx;
+  height: 64rpx;
+  vertical-align: middle;
+}
+
+.athhor {
+  margin-left: 20rpx;
+  font-weight: 300;
+  font-size: 30rpx;
+  color: #666;
+  vertical-align: middle;
+}
+
+.const-text {
+  margin-left: 20rpx;
+  color: #999;
+  font-size: 24rpx;
+}
+
+.date {
+  margin-left: 30rpx;
+  font-size: 24rpx;
+  color: #999;
+  vertical-align: middle;
+}
+
+.title {
+  margin-left: 40rpx;
+  font-size: 36rpx;
+  font-weight: 700;
+  margin-top: 30rpx;
+  letter-spacing: 2rpx;
+  color: #4b556c;
+}
+
+.tool {
+  margin-top: 20rpx;
+  height: 90rpx;
+}
+
+.circle-img {
+  float: right;
+  margin-right: 40rpx;
+  vertical-align: middle;
+}
+
+.circle-img image {
+  width: 90rpx;
+  height: 90rpx;
+}
+
+.share-img {
+  margin-left: 30rpx;
+}
+
+.horizon {
+  background-color: #e5e5e5;
+  height: 1px;
+  width: 660rpx;
+  margin: 46rpx auto;
+}
+
+.detail {
+  color: #666;
+  margin: 20rpx 30rpx 0 30rpx;
+  line-height: 44rpx;
+  letter-spacing: 2rpx;
+}

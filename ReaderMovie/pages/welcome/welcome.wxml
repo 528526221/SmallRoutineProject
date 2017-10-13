@@ -1,0 +1,15 @@
+<view class='container'>
+  <image class='user-avatar' src='{{userInfo.avatarUrl}}'></image>
+  <view class='name-container'>
+    <text>欢迎您~ </text>
+    <text wx:if="{{userInfo.haveCountry}}">来自{{userInfo.country}}</text>
+    <text wx:if="{{userInfo.haveCity}}">-{{userInfo.city}}</text>
+    <text wx:if="{{userInfo.haveCountry}}">的</text>
+    <text class='user-name'>{{userInfo.nickName}}</text>
+  </view>
+  
+  
+  <view class='moto-container' catchtap='openIndex'>
+    <text class='moto'>点击这里哦</text>
+  </view>
+</view>

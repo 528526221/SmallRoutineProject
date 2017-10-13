@@ -1,0 +1,50 @@
+@import "movie-list/movie-list-template.wxss";
+@import "../more-movie/movie-grid/movie-grid-template.wxss";
+
+page {
+  background: #f2f2f2;
+}
+
+.search {
+  display: flex;
+  flex-direction: row;
+  height: 80rpx;
+}
+
+.search icon {
+  margin: auto 20rpx auto 20rpx;
+}
+
+.clear-container{
+  float: right;
+  width: 80rpx;
+  height: 80rpx;
+  display: flex;
+  flex-direction: row;
+}
+/* 必须要设置父容器为flex弹性盒子模型，margin的auto才会生效，原因未知 */
+.icon-clear{
+  width: 30rpx;
+  height: 30rpx;
+  margin:auto;
+}
+
+.search input {
+  height: 100%;
+  width: 600rpx;
+  font-size: 28rpx;
+  font-weight: 300;
+  padding-left: 20rpx;
+}
+
+.placeHolder {
+  font-size: 28rpx;
+  color: #d1d1d1;
+  font-weight: 200;
+}
+
+/* 绝对定位必须要加left top right bottom 来使其生效，否则不起作用的 */
+.search-pannel {
+  position: absolute;
+  top: 80rpx;
+}

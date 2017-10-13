@@ -1,0 +1,7 @@
+<import src="movie-grid/movie-grid-template.wxml" />
+<!-- <scroll-view  bindscrolltolower="scrollToLoadMore" bindscrolltoupper="scrollToRefresh" style='height:1300rpx' scroll-y='true'>
+  <template is="movieGridTemplate" data="{{movies}}"></template>
+</scroll-view> -->
+<view>
+  <template is="movieGridTemplate" data="{{movies}}"></template>
+</view>

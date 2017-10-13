@@ -1,0 +1,18 @@
+<import src="post-item/post-item-template.wxml" />
+<import src="swiper-item/swiper-item-template.wxml" />
+
+<view>
+  <swiper indicator-dots='true' autoplay='true' >
+    <block wx:for="{{post_key}}" wx:for-item="swiper" wx:key="*this">
+      <view catchtap='onSwiperTap' data-swiper-data='{{swiper}}'>
+        <template is="swiperItem" data="{{...swiper}}" />
+      </view>
+    </block>
+  </swiper>
+  <block wx:for='{{post_key}}' wx:for-item='item' wx:for-index="index" wx:key="*this">
+    <view catchtap='onPostTap' data-post-id="{{index}}" data-post-data="{{item}}">
+      <template is="postItem" data="{{...item}}" />
+    </view>
+  </block>
+
+</view>

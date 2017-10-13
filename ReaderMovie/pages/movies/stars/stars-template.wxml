@@ -1,0 +1,12 @@
+<template name="starsTemplate">
+  <view class='stars-container'>
+    <view class='stars'>
+      <image src='{{stars>=10?"/images/icon/star.png":"/images/icon/none-star.png"}}'></image>
+      <image src='{{stars>=20?"/images/icon/star.png":"/images/icon/none-star.png"}}'></image>
+      <image src='{{stars>=30?"/images/icon/star.png":"/images/icon/none-star.png"}}'></image>
+      <image src='{{stars>=40?"/images/icon/star.png":"/images/icon/none-star.png"}}'></image>
+      <image src='{{stars>=50?"/images/icon/star.png":"/images/icon/none-star.png"}}'></image>
+    </view>
+    <text class='star-score'>{{average}}</text>
+  </view>
+</template>

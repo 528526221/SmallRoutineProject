@@ -1,0 +1,5 @@
+<template name="swiperItem">
+  <swiper-item>
+    <image src='{{imgSrc}}'></image>
+  </swiper-item>
+</template>
