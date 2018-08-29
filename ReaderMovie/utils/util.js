@@ -66,7 +66,9 @@ function convertToDate(time) {
       //3小时之内
       result = parseInt(timeSpace / 60/60/1000)+ "小时前";
     }else{
-      result = new Date(tempTime).toLocaleTimeString();
+      // result = new Date(tempTime).toLocaleTimeString();
+      result = this.formatDate(tempTime, "hh:mm");
+
     }
   } else if (todayStart - tempTime <= 24 * 3600 * 1000) {
     result = "昨天" ;
@@ -94,7 +96,7 @@ function getTodayStart() {
 /**
  * 格式化时间戳日期
  * @param 时间戳
- * @param 格式化模板  yyyy-MM-dd
+ * @param 格式化模板  yyyy-MM-dd hh:mm
  */
 function formatDate(timeStamp,format) {
   var that = new Date(timeStamp);

@@ -75,7 +75,9 @@ Page({
           complete: function (res) { },
         });
       },
-      complete: function (res) { },
+      complete: function (res) { 
+        console.log(res);
+      },
     });
   },
 

@@ -16,18 +16,18 @@ App({
    */
   onShow: function (options) {
     // 提前向用户发起授权请求
-    wx.getSetting({
-      success(res) {
-        if (!res.authSetting['scope.userInfo']) {
-          wx.authorize({
-            scope: 'scope.userInfo',
-            success(e) {
+    // wx.getSetting({
+    //   success(res) {
+    //     if (!res.authSetting['scope.userInfo']) {
+    //       wx.authorize({
+    //         scope: 'scope.userInfo',
+    //         success(e) {
               
-            }
-          })
-        }
-      }
-    })
+    //         }
+    //       })
+    //     }
+    //   }
+    // })
   },
 
   /**
