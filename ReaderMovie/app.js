@@ -1,6 +1,6 @@
 App({
   globalData:{
-    doubanBase: "https://api.douban.com",
+    doubanBase: "http://t.yushu.im",
     dwBase: "https://box.dwstatic.com",
   },
 
